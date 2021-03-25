@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Редактирование данных</title>
+  <link href="main.bundle.css" rel="stylesheet"></head>
+  <body>
+    <div class="page page__edit-account">
+      <div class="header">
+        <h1>Регистрация в профсоюзе</h1>
+        <h3 class="scope">
+          <div class="scope__image"><img src="images/5f53bd4080bd9331238b95fd40c7fb76.png"></div>
+          <div class="scope__description">Отрасль, в которой вы заняты, относится к сфере работы Белорусского независимого профсоюза. БНП - официально зарегистрированная организация.</div>
+        </h3>
+      </div>
+      <div class="content">
+        <form>
+          <div class="form-group">
+            <label for="surname">Фамилия</label>
+            <input type="text" id="surname" value="Сидоров">
+            <div class="description">Как в бумажном заявлении</div>
+          </div>
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" value="Пётр">
+            <div class="description">Как в бумажном заявлении</div>
+          </div>
+          <div class="form-group">
+            <label for="patronymic">Отчество</label>
+            <input type="text" id="patronymic" value="Иванович">
+            <div class="description">Как в бумажном заявлении</div>
+          </div>
+          <div class="form-group">
+            <label for="birthday">Дата рождения</label>
+            <input type="text" id="birthday" value="25-05-1980">
+            <div class="description">ГГГГ-ММ-ДД</div>
+          </div>
+          <!--.form-group-->
+          <!--    label Сфера деятельности-->
+          <!--    select-->
+          <!--      each item in ["Банковская сфера", "Безработный", "Госслужба", "Гостиничный бизнес, туризм", "Дизайн (для дизайнерских студий)", "Добывающая отрасль", "Издательское дело", "ИП и самозанятость", "Искусство, культура", "ИТ сфера", "Лесная промышленность, деревообработка", "Медицина, фармацевтика, аптеки", "Металлургия, металлообработка, металлоконструкции", "Молокопереработка", "Мясопереработка", "Научные сотрудники", "Недвижимость"]-->
+          <!--          option= item-->
+          <!--    .description Выберите сферу деятельности вашей организации-->
+          <div class="form-group">
+            <label for="workplace">Место работы</label>
+            <input type="text" id="workplace" value="ОАО &quot;Минский тракторный завод&quot;">
+            <div class="description">Официальное название организации</div>
+          </div>
+          <div class="form-group">
+            <label for="position">Должность</label>
+            <input type="text" id="position" value="Инжинер-программист">
+            <div class="description">Ваша должность</div>
+          </div>
+          <div class="form-group">
+            <label for="address">Адрес</label>
+            <input type="text" id="address" value="г. Минск, ул. Я.Купалы, д.2, кв.35">
+            <div class="description">Адрес проживания</div>
+          </div>
+          <div class="form-group error">
+            <label for="phone">Телефон</label>
+            <input type="text" id="phone" value="+375 29 9703860">
+            <!--.description Код оператора и номер телефона (всего 9 цифр)-->
+            <div class="description">Номер телефона не соответствует стандарту</div>
+          </div>
+          <div class="form-group error">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" value="greenpeace@gmail.com">
+            <!--.description Адрес электронной почты-->
+            <div class="description">Этот электронный адрес уже зарегистрирован</div>
+          </div>
+          <div class="form-group error">
+            <label for="login">Логин</label>
+            <input type="text" id="login" value="goodboy">
+            <!--.description Имя для входа-->
+            <div class="description">Это имя уже зарегистрировано</div>
+          </div>
+          <div class="form-group error">
+            <label for="password">Пароль</label>
+            <input type="password" id="password" value="281276weTg56">
+            <!--.description Используйте 8 или более символов с сочетанием заглавных и строчных букв, цифр и символов-->
+            <div class="description">Используйте 8 или более символов с сочетанием заглавных и строчных букв, цифр и символов</div>
+          </div>
+          <div class="form-group error">
+            <label for="password_repeat">Подтвердить пароль</label>
+            <input type="password" id="password_repeat" value="281276weTg56">
+            <div class="description">Пароли не совпадают</div>
+          </div>
+          <div class="form-group form-actions">
+            <input class="primary" type="submit" value="Сохранить данные">
+          </div>
+        </form>
+      </div>
+    </div>
+  <script src="vendors~main.bundle.js"></script><script src="main.bundle.js"></script></body>
+</html>
